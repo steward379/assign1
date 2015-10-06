@@ -31,15 +31,12 @@ void setup () {
 
 void draw() {
   
-  // Repeat Backgrounds themselves 3 times in a row
+  // infinite!! ya!
   speedFly+=2;
-  speedFly%=3200;
+  speedFly%=1280;
   image(backgroundTwo,speedFly,0);
   image(backgroundOne,speedFly-640,0);
   image(backgroundTwo,speedFly-1280,0);
-  image(backgroundOne,speedFly-1920,0);
-  image(backgroundTwo,speedFly-2560,0);
-  image(backgroundOne,speedFly-3200,0);
   
   // setting planes' speed and scope, show up repeatedly
   speedPlaneFly+=3;
