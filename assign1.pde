@@ -10,11 +10,11 @@ PImage treasureE;
 int speedFly;
 int speedPlaneFly;
 
-// locations random
-int popUpVerticalFighter = floor(random(30,420));
-int popUpVerticalEnemy = floor(random(30,420));
+// locations random, setting clearzone
+int popUpVerticalFighter = floor(random(50,420));
+int popUpVerticalEnemy = floor(random(50,420));
 int popUpHorizonTreasure = floor(random(100,500));
-int popUpVerticalTreasure = floor(random(50,450));
+int popUpVerticalTreasure = floor(random(50,420));
 int hpBar = floor(random(10,200));
   
 void setup () {
@@ -40,7 +40,7 @@ void draw() {
   
   // setting planes' speed and scope, show up repeatedly
   speedPlaneFly+=3;
-  speedPlaneFly%=650;
+  speedPlaneFly%=640;
   
   //draw things and set their locations randomly
   image(enemyPlane,speedPlaneFly,popUpVerticalEnemy);
@@ -53,4 +53,4 @@ void draw() {
   image(healthPanel,30,15);  
 }
 
-/* this is the end of my codes.*/
+/* this is the end of my code.*/
